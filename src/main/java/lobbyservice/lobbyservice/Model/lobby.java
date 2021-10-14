@@ -9,10 +9,7 @@ import javax.persistence.*;
 @EntityListeners(AuditingEntityListener.class)
 public class lobby {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-
-    @Column(name="lobby_name", nullable = false)
     private String lobbyname;
 
     /* Gets id.
