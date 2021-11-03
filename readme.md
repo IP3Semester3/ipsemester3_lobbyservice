@@ -36,6 +36,8 @@ The user will also be able to join lobby's that are available if the room code w
 have made a seperated database tabel. In this tabel we have connected the users to the room code. The username of the user
 will also be pushed to the screen when he joins. This way there will be a clear view of the users that are currently in the lobby.
 
+## Planning
+For the planning of this project we created a Jira board. The Jira board of the project can be found in the following link https://semseter3-ip-tomeykholt.atlassian.net/jira/software/projects/SEM3/boards/2 . For this part of the whole project noted in Jira you can look al user story SEM3-30. This is the user story that is connected to this service. 
 
 ### Sources
 https://dzone.com/articles/how-to-create-rest-api-with-spring-boot
