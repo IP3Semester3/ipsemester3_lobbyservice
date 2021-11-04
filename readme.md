@@ -4,13 +4,12 @@ The lobby service will make it able to join and create lobby's. We created this 
 After this you will be able to implement the service to your own application via a RestAPI. The application is also tested with unit tests. They can be found at {filename}.
 
 ## Branches
-Regarding the branches of the services. The project under development can be found in the development branch. You also need to push to this branch when you are developing with us and pushing the services. The project that includes the unit testing of the project can be found at the testing branch. If you want to test the code you added you can set a pull request from development to testing. This will get checked and if everything is correct the pull request will get accepted. If you want to edit or add tests you can switch to the testing branch and push to that branch.
-
+Regarding the branches of the services. The project under development can be found in the development branch. You also need to push to this branch when you are developing with us and pushing the services. The unit tests can also be found in this branch. The Unit tests will automatically run when you pull request to the stable branch if the request gets accepted it gets pushed to the main branch and automatically updated in docker.
 ## Architecture
-In the project we use the MVC principle. The folders can be found under src/main/java/lobbyservice.lobbyservice. From the controller the project returns a API. This way we can connect the project to a frontend of the users choice. The API will this way connect this project to a other project so that we can use a distributed architecture. 
+In the project we use the MVC principle. The folders can be found under src/main/java/lobbyservice.lobbyservice. From the controller the project returns a API. This way we can connect the project to a frontend of the users choice. The API will this way connect this project to an other project so that we can use a distributed architecture. 
 
 ## Coding guidelines
-Above each method pseudo code can be found. This describes what the function does, what parameters it has, what it returns and if necessary what exception it throws. The template for this can be found underneath 
+Above each method pseudocode can be found. This describes what the function does, what parameters it has, what it returns and if necessary what exception it throws. The template for this can be found underneath 
 ````
 /*
     {What does the function do}
