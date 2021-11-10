@@ -2,9 +2,9 @@ name: Docker Image Lobbyservice
 
 on:
   push:
-    branches: [ main ]
+    branches: [ SEM3-30-stable ]
   pull_request:
-    branches: [ main ]
+    branches: [ SEM3-30-stable ]
 
 jobs:
 
