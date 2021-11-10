@@ -1,7 +1,7 @@
 # Lobby service
 #### README
 The lobby service will make it able to join and create lobby's. We created this service in Java Spring boot with JPA for the database side. With this service you will only need to insert the database and everything will be ready to go.
-After this you will be able to implement the service to your own application via a RestAPI. The application is also tested with unit tests. They can be found at {filename}.
+After this you will be able to implement the service to your own application via a RestAPI. The application is also tested with unit tests. They can be found at `/src/test/java/lobbyservice/lobbyservice/`.
 
 ## Branches
 Regarding the branches of the services. The project under development can be found in the development branch. You also need to push to this branch when you are developing with us and pushing the services. The unit tests can also be found in this branch. The Unit tests will automatically run when you pull request to the stable branch if the request gets accepted it gets pushed to the main branch and automatically updated in docker.
