@@ -3,12 +3,10 @@ package lobbyservice.lobbyservice;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lobbyservice.lobbyservice.Controller.LobbyController;
 import lobbyservice.lobbyservice.Model.lobby;
-import lobbyservice.lobbyservice.Repository.LobbyRepo;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 
 import org.springframework.http.HttpStatus;
@@ -17,13 +15,12 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
-import static org.mockito.Mockito.doReturn;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 import static org.hamcrest.Matchers.*;
 
 import java.util.*;
 
-@WebMvcTest(LobbyController.class)
+@WebMvcTest(LobbyControllerTest.class)
 class LobbyControllerTest {
     @Autowired
     MockMvc mockMvc;
@@ -37,7 +34,7 @@ class LobbyControllerTest {
     lobby RECORD_2 = new lobby(1, "lobby1");
 
     @Test
-    public void getAllLobbys_succes() throws Exception {
+    public void getAllLobbysSuccesTest() throws Exception {
         List<lobby> lobbys = new ArrayList<>(Arrays.asList(RECORD_1, RECORD_2));
         Mockito.when(_lobbyController.getLobbys()).thenReturn(lobbys);
 
@@ -50,7 +47,7 @@ class LobbyControllerTest {
     }
 
     @Test
-    public void getLobbyById_success() throws Exception {
+    public void getLobbyByIdSuccessTest() throws Exception {
         String jsonReturn = "{\"players\":[{\"id\":0,\"lobby_id\":0,\"username\":\"Tom\"},{\"id\":2,\"lobby_id\":0,\"username\":\"JanJansenEnDeKinderen\"},{\"id\":3,\"lobby_id\":0,\"username\":\"JanJansenEnDeKinderen\"},{\"id\":1,\"lobby_id\":0,\"username\":\"JanJansenEnDeKinderen\"}]}";
         HashMap<String, Object> hmap = new HashMap<String, Object>();
         hmap.put("count", 4);
