@@ -1,16 +1,27 @@
 package lobbyservice.lobbyservice.Model;
-
+import lombok.Builder;
+import lombok.Data;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
 
 @Entity
 @Table(name = "lobby")
+@Data
+@Builder
 @EntityListeners(AuditingEntityListener.class)
 public class lobby {
     @Id
     private long id;
     private String lobbyname;
+
+    public lobby() {
+
+    }
+    public lobby(long _id,  String _lobbyname) {
+        this.id = _id;
+        this.lobbyname = _lobbyname;
+    }
 
     /* Gets id.
             *

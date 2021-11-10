@@ -28,7 +28,7 @@ import java.util.List;
          * @return the list
          */
         @GetMapping("/lobby")
-        public List<lobby> getLobbys() {
+        public  List<lobby> getLobbys() {
             return _lobbyRepo.findAll();
         }
 
@@ -40,7 +40,7 @@ import java.util.List;
          * @throws ResourceNotFoundException the resource not found exception
          */
         @GetMapping("/lobby/{id}")
-        public ResponseEntity<HashMap<String, Object>> getUsersById(@PathVariable(value = "id") Long lobbyId)
+        public ResponseEntity<HashMap<String, Object>> getLobbyById(@PathVariable(value = "id") Long lobbyId)
                 throws ResourceNotFoundException {
             List<lobbyservice> lobby =
                     _lobbyServiceRepo
@@ -60,7 +60,7 @@ import java.util.List;
          * @return the lobby
          */
         @PostMapping("/lobby")
-        public lobby createUser(@Valid @RequestBody lobby lobby) {
+        public lobby createLobby(@Valid @RequestBody lobby lobby) {
             return _lobbyRepo.save(lobby);
         }
 
