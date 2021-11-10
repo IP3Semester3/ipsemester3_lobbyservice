@@ -9,6 +9,7 @@ Regarding the branches of the services. The project under development can be fou
 In the project we use the MVC principle. The folders can be found under src/main/java/lobbyservice.lobbyservice. From the controller the project returns a API. This way we can connect the project to a frontend of the users choice. The API will this way connect this project to an other project so that we can use a distributed architecture. 
 
 ## Coding guidelines
+In this project we use the Java standard coding convetions they can be found at https://www.oracle.com/java/technologies/javase/codeconventions-contents.html.
 Above each method pseudocode can be found. This describes what the function does, what parameters it has, what it returns and if necessary what exception it throws. The template for this can be found underneath 
 ````
 /*
