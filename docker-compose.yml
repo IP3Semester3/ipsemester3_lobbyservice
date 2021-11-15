@@ -9,6 +9,8 @@ services:
       - MYSQL_ALLOW_EMPTY_PASSWORD=1
     ports:
       - "3307:3306"
+    volumes:
+      -  ./scripts/setup.sql:/docker-entrypoint-initdb.d/1.sql
   lobbyservice-application-container:
       image: lobbyservice
       ports:
