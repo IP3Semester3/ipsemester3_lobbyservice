@@ -1,3 +1,4 @@
+![](https://media.giphy.com/media/U4kOOpZGpTqz6dlYnE/giphy.gif)
 # Lobby service
 #### README
 The lobby service will make it able to join and create lobby's. We created this service in Java Spring boot with JPA for the database side. With this service you will only need to insert the database and everything will be ready to go.
@@ -21,12 +22,13 @@ Above each method pseudocode can be found. This describes what the function does
  */
 ````
 
+## Docker
+
+For docker we have two things that are used inside of this project. We have a single docker image called 'lobbyservice'. This is what the CI/CD checks and builds. But if you want to runt the program using docker you will need a database. To get this working you need to download the project go into the root of the project using your CMD and use `docker-compose -f docker-compose.yml up` to run the docker-compose.yml. This way you will create a docker compose with that pulls the project 'lobbyservice' project and the needed database with data. 
 
 ## Database
 #### Lobby creation
-For the creation of the lobby's there is a MySQL database available we have included it as a .sql file. The only thing left to do
-when you initiated the file is to connect your database data in the system. To do this you will need to edit the application.properties file and 
-insert your own database username and password. The database will connect to the system via a rest API. 
+For the creation of the lobby's there is a MySQL database available. This will be included in the project when you are using the docker compose version of the project as noted above. For testing of the project we used a localhost server with username: Root and no password. If you are using different credentials for your database be sure to edit the  application.properties and docker-compose.yml to your presonal credentials.
 
 The moment that a lobby closed it will be deleted out of the database. This option will only be available when everyone has left
 the lobby.
