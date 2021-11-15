@@ -1,18 +1,20 @@
 package lobbyservice.lobbyservice.Model;
 import lombok.Builder;
 import lombok.Data;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
 
 @Entity
 @Table(name = "lobby")
-@Data
 @Builder
 @EntityListeners(AuditingEntityListener.class)
 public class lobby {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
+
     private String lobbyname;
 
     public lobby() {

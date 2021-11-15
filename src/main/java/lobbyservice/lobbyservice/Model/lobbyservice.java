@@ -11,7 +11,6 @@ public class lobbyservice {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-
     private long lobby_id;
     private String username;
 
