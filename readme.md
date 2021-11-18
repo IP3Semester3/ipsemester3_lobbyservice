@@ -33,6 +33,9 @@ For the creation of the lobby's there is a MySQL database available. This will b
 The moment that a lobby closed it will be deleted out of the database. This option will only be available when everyone has left
 the lobby.
 
+## Pull requests
+Within this project we make use of pull requests to the stable branch. These pull requests will need to get reviewd within 24 hours of creation. This way you dont have to wait a really long time before the pull requests gets accepted. 
+
 #### Lobby joining
 The user will also be able to join lobby's that are available if the room code was giving to the user. For the joining of the lobby's we
 have made a seperated database tabel. In this tabel we have connected the users to the room code. The username of the user
