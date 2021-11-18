@@ -26,6 +26,9 @@ Above each method pseudocode can be found. This describes what the function does
 
 For docker we have two things that are used inside of this project. We have a single docker image called 'lobbyservice'. This is what the CI/CD checks and builds. But if you want to runt the program using docker you will need a database. To get this working you need to download the project go into the root of the project using your CMD and use `docker-compose -f docker-compose.yml up` to run the docker-compose.yml. This way you will create a docker compose with that pulls the project 'lobbyservice' project and the needed database with data. 
 
+## Pull requests
+Within this project we make use of pull requests to the stable branch. These pull requests will need to get reviewd within 24 hours of creation. This way you dont have to wait a really long time before the pull requests gets accepted. 
+
 ## Database
 #### Lobby creation
 For the creation of the lobby's there is a MySQL database available. This will be included in the project when you are using the docker compose version of the project as noted above. For testing of the project we used a localhost server with username: Root and no password. If you are using different credentials for your database be sure to edit the  application.properties and docker-compose.yml to your presonal credentials.
