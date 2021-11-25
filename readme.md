@@ -5,7 +5,7 @@ The lobby service will make it able to join and create lobby's. It is currently 
 After this you will be able to implement the service to your own application via a RestAPI. The application is also tested with unit tests. They can be found at `/src/test/java/lobbyservice/lobbyservice/`.
 
 ## Gettings started
-Welcome to the this repository for the lobbyservice. If you are new here please keep on reading, this way you will have all the information needed before working on the project. If you have been here before feel free to keep on working on the project. If you have worked before on one of our other services ( spotify service, roomservice-frontend). You will only need to read Docker and Database. The other subjects are the same as in the other projects.
+Welcome to the this repository for the lobbyservice. If you are new here please keep on reading, this way you will have all the information needed before working on the project. If you have been here before feel free to keep on working on the project. If you have worked before on one of our other services ( spotify service, roomservice-frontend). You will only need to read Docker, Database and Development. The other subjects are the same as in the other projects.
 
 ## Branches
 Regarding the branches of the services. The project under development can be found in the development branch. You also need to push to this branch when you are developing with us and pushing the services. The unit tests can also be found in this branch. The Unit tests will automatically run when you pull request to the stable branch if the request gets accepted it gets pushed to the main branch and automatically updated in docker.
