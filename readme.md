@@ -9,8 +9,11 @@ Welcome to the this repository for the lobbyservice. If you are new here please 
 
 ## Branches
 Regarding the branches of the services. The project under development can be found in the development branch. You also need to push to this branch when you are developing with us and pushing the services. The unit tests can also be found in this branch. The Unit tests will automatically run when you pull request to the stable branch if the request gets accepted it gets pushed to the main branch and automatically updated in docker.
+
 ## Architecture
-In the project we use the MVC principle. The folders can be found under src/main/java/lobbyservice.lobbyservice. From the controller the project returns a API. This way we can connect the project to a frontend of the users choice. The API will this way connect this project to an other project so that we can use a distributed architecture. 
+In the project we use the MVC principle. The folders can be found under src/main/java/lobbyservice.lobbyservice. From the controller the project returns a API. This way we can connect the project to a frontend of the users choice. The API will this way connect this project to an other project so that we can use a distributed architecture. You can see this more detaild in the C2 image below.
+
+![C2](https://user-images.githubusercontent.com/78905924/143424170-f13b1110-eb65-4b86-8899-b074f21c4b3a.png)
 
 ## Coding guidelines
 In this project we use the Java standard coding convetions they can be found at https://www.oracle.com/java/technologies/javase/codeconventions-contents.html.
