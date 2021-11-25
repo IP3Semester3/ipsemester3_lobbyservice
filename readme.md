@@ -1,7 +1,7 @@
 ![](https://media.giphy.com/media/U4kOOpZGpTqz6dlYnE/giphy.gif)
 # Lobby service
 #### README
-The lobby service will make it able to join and create lobby's. We created this service in Java Spring boot with JPA for the database side. With this service you will only need to insert the database and everything will be ready to go.
+The lobby service will make it able to join and create lobby's. It is currently still under development. We created this service in Java Spring boot with JPA for the database side. With this service you will only need to insert the database and everything will be ready to go.
 After this you will be able to implement the service to your own application via a RestAPI. The application is also tested with unit tests. They can be found at `/src/test/java/lobbyservice/lobbyservice/`.
 
 ## Gettings started
