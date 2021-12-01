@@ -38,7 +38,6 @@ Above each method pseudocode can be found. This describes what the function does
 ````
 
 ## Docker
-
 For docker we have two things that are used inside of this project. We have a single docker image called 'lobbyservice'. This is what the CI/CD checks and builds. But if you want to runt the program using docker you will need a database. To get this working you need to download the project go into the root of the project using your CMD and use `docker-compose -f docker-compose.yml up` to run the docker-compose.yml. This way you will create a docker compose with that pulls the project 'lobbyservice' project and the needed database with data. 
 
 ## Pull requests
