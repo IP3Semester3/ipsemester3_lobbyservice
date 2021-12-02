@@ -5,10 +5,13 @@ The lobby service will make it able to join and create lobby's. It is currently 
 After this you will be able to implement the service to your own application via a RestAPI. The application is also tested with unit tests. They can be found at `/src/test/java/lobbyservice/lobbyservice/`.
 
 ## Gettings started
-Welcome to the this repository for the lobbyservice. If you are new here please keep on reading, this way you will have all the information needed before working on the project. If you have been here before feel free to keep on working on the project. If you have worked before on one of our other services ( spotify service, roomservice-frontend). You will only need to read Docker, Database and Development. The other subjects are the same as in the other projects.
+Welcome to the this repository for the lobbyservice. If you are new here please keep on reading, this way you will have all the information needed before working on the project. If you have been here before feel free to keep on working on the project. If you have worked before on one of our other services ( spotify service, roomservice-frontend). You will only need to read [Docker](#docker), [Database](#database) and [Development](#development). The other subjects are the same as in the other projects.
 
 ## Branches
 Regarding the branches of the services. The project under development can be found in the development branch. You also need to push to this branch when you are developing with us and pushing the services. The unit tests can also be found in this branch. The Unit tests will automatically run when you pull request to the stable branch if the request gets accepted it gets pushed to the main branch and automatically updated in docker.
+
+## Planning
+For the planning of this project we created a Jira board. The Jira board of the project can be found in the following link https://semseter3-ip-tomeykholt.atlassian.net/jira/software/projects/SEM3/boards/2 . For this part of the whole project noted in Jira you can look al user story SEM3-30. This is the user story that is connected to this service. If you are working on this project be sure to ask for an invite link to either @StijnSchellekens or @TEykholt.
 
 ## Architecture
 In the project we use the MVC principle. The folders can be found under src/main/java/lobbyservice.lobbyservice. From the controller the project returns a API. This way we can connect the project to a frontend of the users choice. The API will this way connect this project to an other project so that we can use a distributed architecture. You can see this more detaild in the C2 image below.
@@ -38,7 +41,7 @@ Above each method pseudocode can be found. This describes what the function does
 ````
 
 ## Docker
-For docker we have two things that are used inside of this project. We have a single docker image called 'lobbyservice'. This is what the CI/CD checks and builds. But if you want to runt the program using docker you will need a database. To get this working you need to download the project go into the root of the project using your CMD and use `docker-compose -f docker-compose.yml up` to run the docker-compose.yml. This way you will create a docker compose with that pulls the project 'lobbyservice' project and the needed database with data. 
+For docker we have two things that are used inside of this project. We have a single docker image called 'lobbyservice'. This is what the CI/CD checks and builds. This image can be pulled using `docker pull mtolmtomt/lobbyservice`. But if you want to runt the program using docker you will need a database. To get this working you need to download the project go into the root of the project using your CMD and use `docker-compose -f docker-compose.yml up` to run the docker-compose.yml. This way you will create a docker compose with that pulls the project 'lobbyservice' project and the needed database with data. 
 
 ## Pull requests
 Within this project we make use of pull requests to the stable branch. These pull requests will need to get reviewd within 24 hours of creation. This way you dont have to wait a really long time before the pull requests gets accepted. 
@@ -54,9 +57,6 @@ the lobby.
 The user will also be able to join lobby's that are available if the room code was giving to the user. For the joining of the lobby's we
 have made a seperated database tabel. In this tabel we have connected the users to the room code. The username of the user
 will also be pushed to the screen when he joins. This way there will be a clear view of the users that are currently in the lobby.
-
-## Planning
-For the planning of this project we created a Jira board. The Jira board of the project can be found in the following link https://semseter3-ip-tomeykholt.atlassian.net/jira/software/projects/SEM3/boards/2 . For this part of the whole project noted in Jira you can look al user story SEM3-30. This is the user story that is connected to this service. 
 
 ### Sources
 https://dzone.com/articles/how-to-create-rest-api-with-spring-boot
