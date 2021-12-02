@@ -4,7 +4,7 @@
 The lobby service will make it able to join and create lobby's. It is currently still under development. We created this service in Java Spring boot with JPA for the database side. With this service you will only need to insert the database and everything will be ready to go.
 After this you will be able to implement the service to your own application via a RestAPI. The application is also tested with unit tests. They can be found at `/src/test/java/lobbyservice/lobbyservice/`.
 
-## Gettings started
+## Getting started
 Welcome to the this repository for the lobbyservice. If you are new here please keep on reading, this way you will have all the information needed before working on the project. If you have been here before feel free to keep on working on the project. If you have worked before on one of our other services ( spotify service, roomservice-frontend). You will only need to read [Docker](#docker), [Database](#database) and [Development](#development). The other subjects are the same as in the other projects.
 
 ## Branches
