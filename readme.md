@@ -1,4 +1,4 @@
-![](https://media.giphy.com/media/U4kOOpZGpTqz6dlYnE/giphy.gif)
+![](https://64.media.tumblr.com/28320f237d1f7e87f01ca53e127103ff/tumblr_mwwm1vURx51s8njeuo1_400.gifv)
 # Lobby service
 #### README
 The lobby service will make it able to join and create lobby's. It is currently still under development. We created this service in Java Spring boot with JPA for the database side. With this service you will only need to insert the database and everything will be ready to go.
