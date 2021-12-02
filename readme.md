@@ -21,14 +21,14 @@ In the project we use the MVC principle. The folders can be found under src/main
 ## Development
 During development we are using the default link for springboot `http://localhost:8080/`. The links we are using for different features for the API are as followed:
 #### Get requests
-- `/api/v1/lobby` : Gets an overview of all the avaible lobbys
+- `/api/v1/lobby` : Gets an overview of all the available lobbys
 - `/api/v1/lobby/{id}` : Gets the overview of the players in that specific lobby
 #### Post requests
-- `/api/v1/lobby/` : When a body is included this will create a lobby accrodingly to the information given in the body
+- `/api/v1/lobby/` : When a body is included this will create a lobby accordingly to the information given in the body
 - `/lobby/{id}/{username}` : Lets the user join the lobby with the id given in the link
 
 ## Coding guidelines
-In this project we use the Java standard coding convetions they can be found at https://www.oracle.com/java/technologies/javase/codeconventions-contents.html.
+In this project we use the Java standard coding conventions they can be found at https://www.oracle.com/java/technologies/javase/codeconventions-contents.html.
 Above each method pseudocode can be found. This describes what the function does, what parameters it has, what it returns and if necessary what exception it throws. The template for this can be found underneath 
 ````
 /*
