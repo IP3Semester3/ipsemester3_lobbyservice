@@ -10,6 +10,9 @@ Welcome to the this repository for the lobbyservice. If you are new here please 
 ## Branches
 Regarding the branches of the services. The project under development can be found in the development branch. You also need to push to this branch when you are developing with us and pushing the services. The unit tests can also be found in this branch. The Unit tests will automatically run when you pull request to the stable branch if the request gets accepted it gets pushed to the main branch and automatically updated in docker.
 
+## Planning
+For the planning of this project we created a Jira board. The Jira board of the project can be found in the following link https://semseter3-ip-tomeykholt.atlassian.net/jira/software/projects/SEM3/boards/2 . For this part of the whole project noted in Jira you can look al user story SEM3-30. This is the user story that is connected to this service. If you are working on this project be sure to ask for an invite link to either @StijnSchellekens or @TEykholt.
+
 ## Architecture
 In the project we use the MVC principle. The folders can be found under src/main/java/lobbyservice.lobbyservice. From the controller the project returns a API. This way we can connect the project to a frontend of the users choice. The API will this way connect this project to an other project so that we can use a distributed architecture. You can see this more detaild in the C2 image below.
 
@@ -54,9 +57,6 @@ the lobby.
 The user will also be able to join lobby's that are available if the room code was giving to the user. For the joining of the lobby's we
 have made a seperated database tabel. In this tabel we have connected the users to the room code. The username of the user
 will also be pushed to the screen when he joins. This way there will be a clear view of the users that are currently in the lobby.
-
-## Planning
-For the planning of this project we created a Jira board. The Jira board of the project can be found in the following link https://semseter3-ip-tomeykholt.atlassian.net/jira/software/projects/SEM3/boards/2 . For this part of the whole project noted in Jira you can look al user story SEM3-30. This is the user story that is connected to this service. 
 
 ### Sources
 https://dzone.com/articles/how-to-create-rest-api-with-spring-boot
