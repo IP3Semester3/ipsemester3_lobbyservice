@@ -29,7 +29,7 @@ During development we are using the default link for springboot `http://localhos
 
 
 ## Intergration
-For this project we worked out userstorie [SEM3-30](https://semseter3-ip-tomeykholt.atlassian.net/jira/software/projects/SEM3/boards/2?selectedIssue=SEM3-30). We tested the functionality of the service for the user story requirements that we dissuces with the stakeholders. These functionalities are tested using intergration tests. The can be found within the project. These tests will be automaticly fired when making a pull request. This way the funciontality of the application stays in tact gets checked and code that cancels the main functionality of the application cannot be pushed. 
+For this project we worked out userstory [SEM3-30](https://semseter3-ip-tomeykholt.atlassian.net/jira/software/projects/SEM3/boards/2?selectedIssue=SEM3-30). We tested the functionality of the service for the user story requirements that we dissuces with the stakeholders. These functionalities are tested using intergration tests. The can be found within the project. These tests will be automaticly fired when making a pull request. This way the funciontality of the application stays in tact gets checked and code that cancels the main functionality of the application cannot be pushed. 
 
 ## Coding guidelines
 In this project we use the Java standard coding conventions they can be found at https://www.oracle.com/java/technologies/javase/codeconventions-contents.html.
